@@ -32,7 +32,9 @@
             гоночной трассы!
           </div>
           <div class="main-action">
-            <button class="button">Посмотреть автомобили</button>
+            <button class="button" id="main-action">
+              Посмотреть автомобили
+            </button>
           </div>
         </div>
       </div>
@@ -65,7 +67,7 @@
               </div>
             </div>
             <div class="car-item-action">
-              <button class="button">Забронировать</button>
+              <button class="button car-button">Забронировать</button>
             </div>
           </div>
 
@@ -92,7 +94,7 @@
               </div>
             </div>
             <div class="car-item-action">
-              <button class="button">Забронировать</button>
+              <button class="button car-button">Забронировать</button>
             </div>
           </div>
 
@@ -119,7 +121,7 @@
               </div>
             </div>
             <div class="car-item-action">
-              <button class="button">Забронировать</button>
+              <button class="button car-button">Забронировать</button>
             </div>
           </div>
 
@@ -146,7 +148,7 @@
               </div>
             </div>
             <div class="car-item-action">
-              <button class="button">Забронировать</button>
+              <button class="button car-button">Забронировать</button>
             </div>
           </div>
 
@@ -173,7 +175,7 @@
               </div>
             </div>
             <div class="car-item-action">
-              <button class="button">Забронировать</button>
+              <button class="button car-button">Забронировать</button>
             </div>
           </div>
 
@@ -200,7 +202,7 @@
               </div>
             </div>
             <div class="car-item-action">
-              <button class="button">Забронировать</button>
+              <button class="button car-button">Забронировать</button>
             </div>
           </div>
         </div>
@@ -215,14 +217,27 @@
           бронирования
         </div>
         <form action="" class="price-form">
-          <input type="text" class="price-input" placeholder="Ваше имя" />
-          <input type="text" class="price-input" placeholder="Ваш телефон" />
+          <input
+            type="text"
+            class="price-input"
+            id="name"
+            placeholder="Ваше имя"
+          />
+          <input
+            type="text"
+            class="price-input"
+            id="phone"
+            placeholder="Ваш телефон"
+          />
           <input
             type="text"
             class="price-input"
             placeholder="Автомобиль, который вас интересует"
+            id="car-choise"
           />
-          <button class="button">Узнать цену</button>
+          <button class="button" id="price-action" type="button">
+            Узнать цену
+          </button>
         </form>
         <img class="price-image" src="./images/rolls.png" alt="rolls" />
       </div>
@@ -233,5 +248,6 @@
         <div class="rights">Все права защищены</div>
       </div>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
